@@ -15,6 +15,7 @@ import dotenv from 'dotenv'
 import { default as cookieParser } from 'cookie-parser';
 import helmet from 'helmet';
 import logStreamFile from './utils/logginDetails.js'
+import { home } from './subscribers/shop/index.js';
 
 
 const app = express();
@@ -46,6 +47,7 @@ app.use('/explore/api/admin', Admin)
 app.use('/explore/api/auth', AuthRoutes)
 app.use('/explore/api/cart', cartRoutes)
 app.use('/explore/api/order', orderRoutes)
+app.use('/', home)
 app.use(errorHandler);
 
 
