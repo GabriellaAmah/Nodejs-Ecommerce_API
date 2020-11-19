@@ -1,10 +1,10 @@
 import express from 'express';
-import { default as Shop } from './shopRoutes.js';
-import { default as Admin } from './adminRoutes.js'
+import { default as Shop } from './api/shopRoutes.js';
+import { default as Admin } from './api/adminRoutes.js'
 import { default as bodyParser } from 'body-parser';
-import { default as AuthRoutes } from './auth.js';
-import { default as cartRoutes } from './cartRoutes.js'
-import { default as orderRoutes } from './orderRoutes.js'
+import { default as AuthRoutes } from './api/auth.js';
+import { default as cartRoutes } from './api/cartRoutes.js'
+import { default as orderRoutes } from './api/orderRoutes.js'
 import errorHandler from './utils/errorHandler.js'
 import imageUpload from './utils/uploads.js'
 import cors from 'cors'
@@ -39,7 +39,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json());
 app.use(imageUpload);
 app.use('/images', express.static(path.join(__dirname, 'images')))
-app.use('/detail/images', express.static(path.join(__dirname, 'images')))
+app.use('/shop/detail/images', express.static(path.join(__dirname, 'images')))
 app.use('/shop', Shop)
 app.use('/admin', Admin)
 app.use('/auth', AuthRoutes)
