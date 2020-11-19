@@ -19,8 +19,8 @@ import { home } from './subscribers/shop/index.js';
 
 
 const app = express();
-app.use(helmet())
 dotenv.config({ path: './config.env' })
+app.use(helmet())
 if (process.env.NODE_ENV === 'development') {
     app.use(morgan('dev'))
 }
