@@ -10,3 +10,5 @@
 ::1 - - [17/Nov/2020:16:19:50 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36"
 ::1 - - [17/Nov/2020:17:13:07 +0000] "GET /bootstrap.css HTTP/1.1" 200 51 "http://localhost:3000/products" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36"
 ::1 - - [17/Nov/2020:17:13:08 +0000] "GET /manifest.json HTTP/1.1" 200 51 "http://localhost:3000/products" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36"
+::1 - - [19/Nov/2020:08:39:48 +0000] "GET / HTTP/1.1" 200 51 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36"
+::1 - - [19/Nov/2020:08:39:48 +0000] "GET /favicon.ico HTTP/1.1" 200 51 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36"

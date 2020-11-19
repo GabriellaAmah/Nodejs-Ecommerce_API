@@ -23,8 +23,6 @@ app.use(helmet())
 dotenv.config({ path: './config.env' })
 if (process.env.NODE_ENV === 'development') {
     app.use(morgan('dev'))
-}else{
-    app.use(morgan('combined', {stream : logStreamFile}))
 }
 
 let __dirname = path.resolve();
