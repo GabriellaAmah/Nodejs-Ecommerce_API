@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node server.js",
-    "development": "nodemon babel server.js",
+    "dev": "nodemon babel server.js",
     "build": "babel server.js"
   },
   "author": "gabriella amah",
