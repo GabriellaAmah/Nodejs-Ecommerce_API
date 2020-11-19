@@ -80,6 +80,55 @@ A **JWT TOKEN** will be provided for you in the response. Intially, the API will
 
 ## Create products
 
+Make a post request to : ` /admin/post-product `
+
+Input the following data
++ name
++ price
++ image (optional)
++ category (optional)
++ description (optional)
+
+**Images should be uploaded through a file picker from the frontend**
+
+## Get products
+
+Make a get request to : ` /shop/products `
+
+## Get products by ID
+
+Make a get request with the ID of the product to : ` shop/product/detail/<product_Id> `
+
+## Get products in the same category
+
+Make a get request with the category included in the query :
+ ` shop/product?category=<mycategory> `
+
+## Add product to Cart
+
+Make a post request with the ID of the product : 
+
+```
+/cart/<product_id>
+```
+
+## Get product from Cart
+
+Make a get request to 
+
+```
+/cart
+```
+
+## Delete a product from Cart
+
+Make a delete request to 
+
+```
+/cart/delete/<product_id>
+```
+
+
 
 
 
