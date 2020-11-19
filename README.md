@@ -55,7 +55,7 @@ Navigate to ` config.env ` file and set up the missing environment variables whi
 + **MONGO_URL** : use your local MongoDb url which should like this ` mongodb://localhost:27017/**Database_name** `
 + **SECRET_KEY** : this could be any value e.g "onlineStore"
 
-##### Registration
+#### Registration
 
 Since this API makes use of Authentication, you need to be a registered user before you make **CRUD** operations to the API
 
@@ -78,7 +78,7 @@ Input the following data
 
 A **JWT TOKEN** will be provided for you in the response. Intially, the API will save the **JWT TOKEN** in the cookies so you do not have to set it again in the frontend
 
-## Create products
+#### Create products
 
 Make a post request to : ` /admin/post-product `
 
@@ -91,20 +91,20 @@ Input the following data
 
 **Images should be uploaded through a file picker from the frontend**
 
-## Get products
+#### Get products
 
 Make a get request to : ` /shop/products `
 
-## Get products by ID
+#### Get products by ID
 
 Make a get request with the ID of the product to : ` shop/product/detail/<product_Id> `
 
-## Get products in the same category
+#### Get products in the same category
 
 Make a get request with the category included in the query :
  ` shop/product?category=<mycategory> `
 
-## Add product to Cart
+#### Add product to Cart
 
 Make a post request with the ID of the product : 
 
@@ -112,7 +112,7 @@ Make a post request with the ID of the product :
 /cart/<product_id>
 ```
 
-## Get product from Cart
+#### Get product from Cart
 
 Make a get request to 
 
@@ -120,7 +120,7 @@ Make a get request to
 /cart
 ```
 
-## Delete a product from Cart
+#### Delete a product from Cart
 
 Make a delete request to 
 
